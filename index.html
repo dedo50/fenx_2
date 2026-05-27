@@ -1,0 +1,607 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Members | Content Creation Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <div class="top-bar-container">
+        <div class="announcement-bar">
+            <div class="marquee">
+                <span data-en="🔥 EXCLUSIVE 30-DAYS FREE TRIAL — LIMITED SPOTS AVAILABLE 🔥" data-ar="🔥 فترة تجريبية مجانية 30 يوماً حصرياً — المقاعد محدودة 🔥">🔥 EXCLUSIVE 30-DAYS FREE TRIAL — LIMITED SPOTS AVAILABLE 🔥</span>
+                <span data-en="🔥 EXCLUSIVE 30-DAYS FREE TRIAL — LIMITED SPOTS AVAILABLE 🔥" data-ar="🔥 فترة تجريبية مجانية 30 يوماً حصرياً — المقاعد محدودة 🔥">🔥 EXCLUSIVE 30-DAYS FREE TRIAL — LIMITED SPOTS AVAILABLE 🔥</span>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="site-navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="brand" aria-label="Premium Members Home">
+                <span class="brand-mark">PM</span>
+                <span class="brand-text">
+                    <span data-en="Premium Members" data-ar="مجتمع صناع المحتوى">Premium Members</span>
+                    <small data-en="Learning Community" data-ar="مجتمع تعليمي">Learning Community</small>
+                </span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+                <a href="#features-section" data-en="Benefits" data-ar="المميزات">Benefits</a>
+                <a href="#courses-section" data-en="Course" data-ar="الباقة">Course</a>
+                <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="language-dropdown" id="languageDropdown">
+                    <button class="language-toggle" id="languageToggle" type="button" aria-haspopup="true" aria-expanded="false">
+                        <span id="selectedLangLabel">English</span>
+                        <span class="language-arrow">▾</span>
+                    </button>
+                    <div class="language-menu" id="languageMenu" role="menu" aria-label="Choose language">
+                        <button class="language-option active" type="button" data-lang="en">English</button>
+                        <button class="language-option" type="button" data-lang="ar">العربية</button>
+                    </div>
+                </div>
+                <button class="btn btn-outline nav-login" type="button" onclick="openLoginModal()" data-en="Login" data-ar="تسجيل الدخول">Login</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="particles-container" id="particles"></div>
+        <div class="container hero-grid">
+            
+            <div class="hero-text" data-animate="fade-up">
+                <h1 data-en="I Went From 9-5 to 7 Figures in 2 Years — Now You Can Learn How for FREE" data-ar="من دوام 9-5 إلى 7 أرقام في سنتين — تعلم الطريقة الآن مجاناً">I Went From 9-5 to 7 Figures in 2 Years — Now You Can Learn How for FREE</h1>
+                <p data-en="Built for beginners and experienced creators. A proven, repeatable system based on core principles that helped me achieve financial freedom." data-ar="صُمم للمبتدئين والمحترفين. نظام مجرب ومبني على أسس قوية ساعدتني في تحقيق الاستقلال المالي.">Built for beginners and experienced creators. A proven, repeatable system based on core principles that helped me achieve financial freedom.</p>
+                
+                <div>
+                    <button class="btn" onclick="smoothScrollTo('#courses-section')" data-en="View Plan & Pricing" data-ar="عرض الباقة والسعر">View Plan & Pricing</button>
+                </div>
+            </div>
+
+            <div class="hero-video" data-animate="scale-in">
+                <div class="protected-video-container" id="videoContainer">
+                    <video id="courseVideo" controls controlslist="nodownload" disablepictureinpicture>
+                        <source src="assets/IMG_0229.M4V" type="video/mp4">
+                    </video>
+                    
+                    <div class="static-watermark">insta:ded0</div>
+
+                    <div class="intro-video-fallback" aria-hidden="true">
+                        <div class="intro-video-fallback-content">
+                            <span class="intro-video-play">▶</span>
+                            <h3 data-en="Introduction video coming soon" data-ar="الفيديو التعريفي قريباً">Introduction video coming soon</h3>
+                            <p data-en="Ensure your file is named IMG_0229.M4V in the assets folder." data-ar="تأكد من وجود الفيديو بالاسم IMG_0229.M4V داخل مجلد assets.">Ensure your file is named IMG_0229.M4V in the assets folder.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-padding container" id="features-section">
+        <div class="features-header" data-animate="fade-up">
+            <h2 data-en="What You Will Get" data-ar="ماذا ستحصل عليه">What You Will Get</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-animate="fade-up">
+                <div class="icon-wrapper">💡</div>
+                <h3 data-en="Idea Generation" data-ar="كيف تطلع فكرة">Idea Generation</h3>
+                <p data-en="Learn how to brainstorm and find viral content ideas easily." data-ar="تعلم كيف تعصف ذهنياً وتجد أفكاراً لمحتوى ينتشر بسهولة.">Learn how to brainstorm and find viral content ideas easily.</p>
+            </div>
+            <div class="feature-card" data-animate="fade-up">
+                <div class="icon-wrapper">📸</div>
+                <h3 data-en="Filming with Camera & Mobile" data-ar="كيف تصور مقطع بالكاميرا والجوال">Filming with Camera & Mobile</h3>
+                <p data-en="Master the angles, lighting, and settings for professional shoots." data-ar="احترف الزوايا، الإضاءة، والإعدادات لتصوير احترافي.">Master the angles, lighting, and settings for professional shoots.</p>
+            </div>
+            <div class="feature-card" data-animate="fade-up">
+                <div class="icon-wrapper">🎬</div>
+                <h3 data-en="Editing on Mobile or PC" data-ar="كيف تمنتج مقطع بالجوال أو اللابتوب/PC">Editing on Mobile or PC</h3>
+                <p data-en="Step-by-step editing tutorials using the best software and apps." data-ar="شرح خطوة بخطوة للمونتاج باستخدام أفضل البرامج والتطبيقات.">Step-by-step editing tutorials using the best software and apps.</p>
+            </div>
+            <div class="feature-card" data-animate="fade-up">
+                <div class="icon-wrapper">🚀</div>
+                <h3 data-en="Publishing Guide" data-ar="إيش تحتاج وقت تنزيل المقطع">Publishing Guide</h3>
+                <p data-en="Everything you need to know about algorithms, tags, and posting times." data-ar="كل ما تحتاجه للتعامل مع الخوارزميات، التاجات، وأوقات النشر.">Everything you need to know about algorithms, tags, and posting times.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding container" id="instructor-section" style="padding-top: 0;">
+        <div class="instructor-grid">
+            <div class="instructor-image-wrapper" data-animate="scale-in">
+                <img src="assets/test.png" alt="Instructor" class="instructor-image">
+            </div>
+            <div class="instructor-content" data-animate="fade-up">
+                <span class="label" data-en="Your Mentor" data-ar="مدربك في هذه الرحلة">Your Mentor</span>
+                <h2 data-en="Meet The Instructor" data-ar="تعرف على المدرب">Meet The Instructor</h2>
+                <h4 data-en="Content Creator & Filmmaker" data-ar="صانع محتوى ومخرج فني" style="color: var(--primary); margin-bottom: 1rem;">Content Creator & Filmmaker</h4>
+                <p data-en="With years of experience in creating viral content, editing, and growing online communities, I've designed this course to give you the exact blueprint I used to reach millions of views. No fluff, just practical steps to turn your ideas into high-quality videos." data-ar="بخبرة تمتد لسنوات في صناعة المحتوى، المونتاج، وبناء الجماهير، صممت هذه الدورة لأعطيك الخلطة السرية التي استخدمتها للوصول لملايين المشاهدات. بدون حشو، فقط خطوات عملية لتحويل أفكارك إلى فيديوهات احترافية.">
+                    With years of experience in creating viral content, editing, and growing online communities, I've designed this course to give you the exact blueprint I used to reach millions of views. No fluff, just practical steps to turn your ideas into high-quality videos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding container" id="courses-section" style="padding-top: 0;">
+        <div class="features-header" data-animate="fade-up">
+            <span class="label" data-en="Start Your Journey" data-ar="ابدأ رحلتك">Start Your Journey</span>
+            <h2 data-en="Choose Your Access Plan" data-ar="انضم إلى الباقة الشاملة">Choose Your Access Plan</h2>
+        </div>
+        
+        <div class="courses-grid single-course">
+            <div class="course-card" data-animate="fade-up" style="border-color: var(--primary);">
+                <div class="course-badge" style="background: var(--primary); color: #000;" data-en="All-in-One Plan" data-ar="الباقة الشاملة">All-in-One Plan</div>
+                <h3 data-en="Content Masterclass & Mentorship" data-ar="دورة صناعة المحتوى الشاملة + توجيه">Content Masterclass & Mentorship</h3>
+                <p class="modal-subtitle" style="text-align: left; margin-bottom: 1rem;" data-en="Everything you need to succeed in one complete package." data-ar="كل ما تحتاجه للنجاح في باقة واحدة متكاملة.">Everything you need to succeed in one complete package.</p>
+                <div class="course-price">1,499 <span>SAR <small data-en="/ lifetime access" data-ar="/ وصول مدى الحياة">/ lifetime access</small></span></div>
+                
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 1.5rem 0;">
+                
+                <ul class="course-features">
+                    <li data-en="20+ Pre-recorded Video Lessons" data-ar="أكثر من 20 فيديو تعليمي مسجل">20+ Pre-recorded Video Lessons</li>
+                    <li data-en="Editing Templates & Assets" data-ar="قوالب جاهزة للمونتاج وملحقات">Editing Templates & Assets</li>
+                    <li data-en="Weekly Content Ideas" data-ar="أفكار محتوى أسبوعية جاهزة للتنفيذ">Weekly Content Ideas</li>
+                    <li data-en="Weekly Live Zoom Sessions" data-ar="جلسات زووم أسبوعية للمراجعة">Weekly Live Zoom Sessions</li>
+                    <li data-en="1:1 Direct Mentorship" data-ar="تواصل مباشر لتقييم مقاطعك">1:1 Direct Mentorship</li>
+                </ul>
+                <button class="btn checkout-btn" onclick="openModal('Complete Course', '1,499 SAR')" data-en="Enroll Now" data-ar="اشترك الآن">Enroll Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <div class="final-cta">
+        </div>
+
+    <section class="contact-section" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-card" data-animate="fade-up">
+                <span class="label" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</span>
+                <h2 data-en="Need help or have a question?" data-ar="تحتاج مساعدة أو عندك استفسار؟">Need help or have a question?</h2>
+                <p data-en="Send us your message directly, or reach us through email or phone. Our team will review your request and get back to you as soon as possible." data-ar="ارسل لنا رسالتك مباشرة، أو تواصل معنا عبر البريد أو الجوال. فريقنا سيراجع طلبك ويرد عليك في أقرب وقت ممكن.">Send us your message directly, or reach us through email or phone. Our team will review your request and get back to you as soon as possible.</p>
+
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <small data-en="Email" data-ar="البريد الإلكتروني">Email</small>
+                            <a href="mailto:info@fenxagency.com">info@fenxagency.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <span class="contact-icon">☎️</span>
+                        <div>
+                            <small data-en="Mobile" data-ar="رقم الجوال">Mobile</small>
+                            <a href="tel:+966553309451">+966 55 330 9451</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card" data-animate="fade-up">
+                <h3 class="gradient-text" data-en="Send a Direct Message" data-ar="أرسل رسالة مباشرة">Send a Direct Message</h3>
+                <p class="modal-subtitle contact-form-subtitle" data-en="Tell us what happened and we will help you." data-ar="اكتب لنا المشكلة وسنساعدك.">Tell us what happened and we will help you.</p>
+
+                <form action="send_message.php" method="POST">
+                    <div class="contact-form-grid">
+                        <div class="form-group">
+                            <label data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+                            <input type="text" name="full_name" class="form-control" placeholder="Your name" data-en-placeholder="Your name" data-ar-placeholder="اكتب اسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                            <input type="email" name="email" class="form-control" placeholder="email@example.com" data-en-placeholder="email@example.com" data-ar-placeholder="email@example.com" required dir="ltr">
+                        </div>
+                        <div class="form-group full-width">
+                            <label data-en="Mobile Number" data-ar="رقم الجوال">Mobile Number</label>
+                            <input type="tel" name="mobile" class="form-control" placeholder="+966 55 000 0000" data-en-placeholder="+966 55 000 0000" data-ar-placeholder="+966 55 000 0000" required dir="ltr">
+                        </div>
+                        <div class="form-group full-width">
+                            <label data-en="Message / Problem" data-ar="الرسالة / المشكلة">Message / Problem</label>
+                            <textarea name="message" class="form-control" placeholder="Write your message here..." data-en-placeholder="Write your message here..." data-ar-placeholder="اكتب رسالتك أو المشكلة هنا..." required></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn checkout-btn" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+                    <p class="contact-note" data-en="This form is ready for backend connection through send_message.php." data-ar="النموذج جاهز للربط البرمجي عبر ملف send_message.php.">This form is ready for backend connection through send_message.php.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-box">
+            <button class="close-btn" type="button" onclick="closeLoginModal()">×</button>
+            <h3 class="modal-title gradient-text" data-en="Login to Your Account" data-ar="تسجيل الدخول إلى حسابك">Login to Your Account</h3>
+            <p class="modal-subtitle" data-en="Access your courses, community, and member dashboard." data-ar="ادخل إلى دوراتك ومجتمعك ولوحة الأعضاء.">Access your courses, community, and member dashboard.</p>
+
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                    <input type="email" name="email" class="form-control" placeholder="email@example.com" data-en-placeholder="email@example.com" data-ar-placeholder="email@example.com" required dir="ltr">
+                </div>
+
+                <div class="form-group">
+                    <label data-en="Password" data-ar="كلمة المرور">Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="Your password" data-en-placeholder="Your password" data-ar-placeholder="كلمة المرور" required dir="ltr">
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: 0.5rem 0 1.3rem; font-size: 0.88rem; color: var(--text-secondary);">
+                    <label style="display: inline-flex; align-items: center; gap: 0.45rem; cursor: pointer;">
+                        <input type="checkbox" name="remember" value="1">
+                        <span data-en="Remember me" data-ar="تذكرني">Remember me</span>
+                    </label>
+                    <a href="#" style="color: var(--primary);" data-en="Forgot password?" data-ar="نسيت كلمة المرور؟">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn checkout-btn" data-en="Login" data-ar="تسجيل الدخول">Login</button>
+
+                <p style="margin-top: 1.2rem; text-align: center; color: var(--text-secondary); font-size: 0.9rem;">
+                    <span data-en="Not a member yet?" data-ar="لست عضواً بعد؟">Not a member yet?</span>
+                    <a href="#courses-section" onclick="closeLoginModal()" style="color: var(--primary); font-weight: 700;" data-en="View Plan" data-ar="عرض الباقة">View Plan</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h3 class="modal-title gradient-text" data-en="Sign Up & Checkout" data-ar="إنشاء حساب ودفع">Sign Up & Checkout</h3>
+            <p class="modal-subtitle"><span data-en="You are enrolling in:" data-ar="أنت على وشك الاشتراك في:">You are enrolling in:</span> <strong id="modal-course-name" style="color: #fff;">-</strong></p>
+
+            <form action="process_checkout.php" method="POST">
+                <input type="hidden" name="course_name" id="hidden_course_name" value="">
+                <input type="hidden" name="payment_method" id="hidden_payment_method" value="credit_card">
+
+                <div class="form-group">
+                    <label data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+                    <input type="text" name="full_name" class="form-control" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                    <input type="email" name="email" class="form-control" placeholder="email@example.com" required dir="ltr">
+                </div>
+                <div class="form-group">
+                    <label data-en="Create Password" data-ar="إنشاء كلمة مرور">Create Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="••••••••" required dir="ltr">
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 1.5rem 0;">
+
+                <label style="display: block; font-size: 0.9rem; margin-bottom: 0.8rem; color: #ddd;" data-en="Select Payment Method" data-ar="اختر طريقة الدفع">Select Payment Method</label>
+                <div class="payment-methods">
+                    <div class="pay-method active" onclick="document.getElementById('hidden_payment_method').value='credit_card'">
+                        <strong data-en="Credit Card" data-ar="بطاقة ائتمانية">Credit Card</strong>
+                        <small>Visa / Mastercard</small>
+                    </div>
+                    <div class="pay-method" onclick="document.getElementById('hidden_payment_method').value='mada'">
+                        <strong>Mada</strong>
+                        <small data-en="Saudi Network" data-ar="الشبكة السعودية">Saudi Network</small>
+                    </div>
+                    <div class="pay-method" onclick="document.getElementById('hidden_payment_method').value='apple_pay'">
+                        <strong>Apple Pay</strong>
+                        <small data-en="Fast Checkout" data-ar="دفع سريع">Fast Checkout</small>
+                    </div>
+                    <div class="pay-method" onclick="document.getElementById('hidden_payment_method').value='stc_pay'">
+                        <strong>STC Pay</strong>
+                        <small data-en="Digital Wallet" data-ar="محفظة رقمية">Digital Wallet</small>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn checkout-btn"><span data-en="Pay" data-ar="ادفع">Pay</span> <span id="modal-price"></span></button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p data-en="&copy; 2026 Premium Members. All Rights Reserved." data-ar="&copy; 2026 مجتمع صناع المحتوى. جميع الحقوق محفوظة.">&copy; 2026 Premium Members. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            /* --- LANGUAGE DROPDOWN LOGIC --- */
+            let currentLang = document.documentElement.getAttribute('lang') || 'en';
+            const languageDropdown = document.getElementById('languageDropdown');
+            const languageToggle = document.getElementById('languageToggle');
+            const selectedLangLabel = document.getElementById('selectedLangLabel');
+            const languageOptions = document.querySelectorAll('.language-option');
+            const translatableElements = document.querySelectorAll('[data-en][data-ar]');
+
+            function setLanguage(lang) {
+                currentLang = lang;
+                document.documentElement.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+                document.documentElement.setAttribute('lang', currentLang);
+
+                translatableElements.forEach(el => {
+                    el.innerText = el.getAttribute(`data-${currentLang}`);
+                });
+
+                document.querySelectorAll('[data-en-placeholder][data-ar-placeholder]').forEach(el => {
+                    el.placeholder = el.getAttribute(`data-${currentLang}-placeholder`);
+                });
+
+                selectedLangLabel.innerText = currentLang === 'ar' ? 'العربية' : 'English';
+                languageOptions.forEach(option => {
+                    option.classList.toggle('active', option.dataset.lang === currentLang);
+                });
+
+                languageDropdown.classList.remove('open');
+                languageToggle.setAttribute('aria-expanded', 'false');
+            }
+
+            languageToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = languageDropdown.classList.toggle('open');
+                languageToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            languageOptions.forEach(option => {
+                option.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    setLanguage(option.dataset.lang);
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!languageDropdown.contains(e.target)) {
+                    languageDropdown.classList.remove('open');
+                    languageToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            setLanguage(currentLang);
+
+            /* --- SMART NAVBAR LOGIC (Glassmorphism & Auto-Hide) --- */
+            const navbar = document.querySelector('.site-navbar');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                
+                // تعديل المسافة العلوية (Top) بذكاء لتجنب الفراغ عند اختفاء شريط الإعلانات
+                if(currentScrollY > 40) {
+                    navbar.style.top = '15px';
+                } else {
+                    navbar.style.top = '55px'; // المسافة تحت شريط الإعلانات
+                }
+
+                // إظهار وإخفاء البار
+                if (currentScrollY <= 60) {
+                    navbar.classList.remove('nav-hidden');
+                } 
+                else if (currentScrollY > lastScrollY) {
+                    // السحب للأسفل: إخفاء
+                    navbar.classList.add('nav-hidden');
+                } 
+                else {
+                    // السحب للأعلى: إظهار
+                    navbar.classList.remove('nav-hidden');
+                }
+                
+                lastScrollY = currentScrollY;
+            });
+
+            /* --- SMOOTH HASH NAVIGATION --- */
+            const topBar = document.querySelector('.top-bar-container');
+            const siteNavbar = document.querySelector('.site-navbar');
+            let activeScrollAnimation = null;
+
+            const getStickyOffset = () => {
+                const topBarHeight = topBar ? topBar.offsetHeight : 0;
+                const navbarHeight = siteNavbar ? siteNavbar.offsetHeight : 0;
+                return topBarHeight + navbarHeight + 18;
+            };
+
+            const easeInOutCubic = (t) => {
+                return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+            };
+
+            const closeMobileNavigation = () => {
+                const menu = document.getElementById('navLinks');
+                const btn = document.getElementById('mobileMenuBtn');
+                if (menu) menu.classList.remove('open');
+                if (btn) btn.innerText = '☰';
+            };
+
+            window.smoothScrollTo = function(hash, updateHash = true) {
+                if (!hash || hash === '#') return;
+
+                const target = document.querySelector(hash);
+                if (!target) return;
+
+                const startPosition = window.pageYOffset;
+                const targetPosition = Math.max(target.getBoundingClientRect().top + window.pageYOffset - getStickyOffset(), 0);
+                const distance = targetPosition - startPosition;
+
+                if (Math.abs(distance) < 2) {
+                    if (updateHash) history.pushState(null, '', hash);
+                    closeMobileNavigation();
+                    return;
+                }
+
+                if (activeScrollAnimation) {
+                    cancelAnimationFrame(activeScrollAnimation);
+                }
+
+                const duration = Math.min(1300, Math.max(750, Math.abs(distance) * 0.55));
+                const startTime = performance.now();
+
+                const animateScroll = (currentTime) => {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easedProgress = easeInOutCubic(progress);
+
+                    window.scrollTo(0, startPosition + distance * easedProgress);
+
+                    if (progress < 1) {
+                        activeScrollAnimation = requestAnimationFrame(animateScroll);
+                    } else {
+                        activeScrollAnimation = null;
+                        if (updateHash) history.pushState(null, '', hash);
+                        closeMobileNavigation();
+                    }
+                };
+
+                activeScrollAnimation = requestAnimationFrame(animateScroll);
+            };
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', (e) => {
+                    const hash = anchor.getAttribute('href');
+                    if (!hash || hash === '#') return;
+
+                    const target = document.querySelector(hash);
+                    if (!target) return;
+
+                    e.preventDefault();
+                    anchor.blur();
+                    smoothScrollTo(hash);
+                });
+            });
+
+            if (window.location.hash && document.querySelector(window.location.hash)) {
+                setTimeout(() => smoothScrollTo(window.location.hash, false), 180);
+            }
+
+            /* --- PARTICLES --- */
+            const particlesContainer = document.getElementById('particles');
+            for(let i=0; i<15; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                const size = Math.random() * 3 + 2;
+                p.style.width = `${size}px`; p.style.height = `${size}px`;
+                p.style.left = `${Math.random() * 100}%`; p.style.top = `${Math.random() * 100 + 50}%`; 
+                p.style.animationDuration = `${Math.random() * 10 + 10}s`;
+                p.style.animationDelay = `${Math.random() * 5}s`;
+                particlesContainer.appendChild(p);
+            }
+
+            /* --- SCROLL PROGRESS --- */
+            const progressBar = document.getElementById('scroll-progress');
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.body.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+                progressBar.style.width = `${scrollPercent}%`;
+            });
+
+            /* --- INTERSECTION OBSERVER --- */
+            const animateOnScroll = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            document.querySelectorAll('[data-animate]').forEach(el => animateOnScroll.observe(el));
+
+            /* --- INTRO VIDEO STATE & PROTECTION --- */
+            const video = document.getElementById('courseVideo');
+            if(video) {
+                video.addEventListener('contextmenu', (e) => {
+                    e.preventDefault(); // يمنع كليك يمين
+                });
+                
+                video.addEventListener('loadedmetadata', () => {
+                    document.getElementById('videoContainer').classList.remove('video-missing');
+                });
+
+                video.addEventListener('error', () => {
+                    document.getElementById('videoContainer').classList.add('video-missing');
+                });
+            }
+
+            /* --- MOBILE NAV --- */
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                mobileMenuBtn.innerText = navLinks.classList.contains('open') ? '×' : '☰';
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    mobileMenuBtn.innerText = '☰';
+                });
+            });
+        });
+
+        /* --- MODAL LOGIC --- */
+        const loginModal = document.getElementById('loginModal');
+
+        function openLoginModal() {
+            loginModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLoginModal() {
+            loginModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        loginModal.addEventListener('click', (e) => {
+            if (e.target === loginModal) closeLoginModal();
+        });
+
+        const modal = document.getElementById('checkoutModal');
+        const courseNameEl = document.getElementById('modal-course-name');
+        const priceEl = document.getElementById('modal-price');
+
+        const translations = {
+            'Complete Course': { en: 'Content Masterclass & Mentorship', ar: 'دورة صناعة المحتوى الشاملة + توجيه' }
+        };
+
+        function openModal(courseKey, price) {
+            const lang = document.documentElement.getAttribute('lang') || 'en';
+            courseNameEl.innerText = translations[courseKey][lang];
+            priceEl.innerText = price;
+            
+            document.getElementById('hidden_course_name').value = courseKey; 
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+                closeLoginModal();
+            }
+        });
+
+        // Payment Methods Select
+        document.querySelectorAll('.pay-method').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.pay-method').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
